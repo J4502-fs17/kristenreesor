@@ -1,26 +1,42 @@
-
+html{ font-size: 100%;
+background-color: gray;}
 
 body{
   text-align: center;
 }
 
 p {
+  font-size: 1rem;
 	color: #darkgray;
     font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
 }
-
+h4{
+  font-size: 1.25rem;
+  line-height: .25rem;
+}
 h1 {
     color: darkred;
     font-weight: bold;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
-#nav li {
+#nav {
     list-style-type: none;
-    float: left;
+      padding: 0;
+  /*  float: left;
+    margin:0;
+    width: 25%; */
+  }
+  #nav li{
     margin: 0;
-    padding: 0;
-    width: 25%;
+      padding: 0;
+  	border: 1px solid #ccc;
+    background-color: darkgray;
+  	text-decoration: none;
 }
 
-img{border-style: none}
+img{
+  border-style: none;
+  border: 25%;
+}
