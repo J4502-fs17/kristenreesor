@@ -1,15 +1,17 @@
 html{ font-size: 100%;
-background-color: gray;}
+}
 
 body{
   text-align: center;
-}
+background-color: gray;}
 
 p {
   font-size: 1rem;
-	color: #darkgray;
-    font-family: Georgia, "Times New Roman", serif;
-    font-style: italic;
+	color: darkred;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+h1,h4{
+  font-family: 'Roboto Slab', Georgia, "Times New Roman", serif;
 }
 h4{
   font-size: 1.25rem;
@@ -18,25 +20,47 @@ h4{
 h1 {
     color: darkred;
     font-weight: bold;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 2.5rem;
 }
 #nav {
     list-style-type: none;
       padding: 0;
+    }
   /*  float: left;
     margin:0;
-    width: 25%; */
-  }
-  #nav li{
-    margin: 0;
-      padding: 0;
-  	border: 1px solid #ccc;
-    background-color: darkgray;
-  	text-decoration: none;
+    width: 25%;
+*/
+#nav li{
+  margin: 0;
+    padding: 0;
+  border-bottom: .1rem solid black;
+  text-decoration: none;
 }
+
+    #nav a:link, a:visited {
+    	display:block;
+        color: black;
+        text-align:center;
+        text-decoration: none;
+        padding: 4px;
+      font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    }
+
+    #nav a:hover {
+      display: block;
+    font-weight: bold;
+    color: lightgray;
+        background-color: darkred;
+    }
 
 img{
   border-style: none;
-  border: 25%;
+}
+
+.caption {
+  color:black;
+  font-style: italic;
+  font-size: .85rem;
+  margin-left: 15%;
+  font-family:'Roboto Condensed', Helvetica, Arial, sans-serif;
 }
