@@ -2,7 +2,6 @@ html{ font-size: 100%;
 }
 
 body{
-  text-align: center;
 background-color: gray;}
 
 p {
@@ -22,26 +21,41 @@ h1 {
     font-weight: bold;
     font-size: 2.5rem;
 }
-#nav {
+.nav {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     list-style-type: none;
       padding: 0;
     }
-
-@media (min-width: 600px){
-  #nav{flex-flow: row;
-  justify-content: center;}
+.content {
+  display: flex;
+  flex-direction: column;
 }
 
-#nav li{
+
+@media and screen (min-width: 600px){
+  .nav{flex-direction: row;
+  justify-content: center;}
+/*  .content p{
+    flex-direction: row;
+    width: 70%;
+    float: left;} */
+  img{
+        float: right;}
+  .content1 {order: -1;}
+  .content2{order: 1;}
+
+}
+
+
+.nav li{
   margin: 0;
     padding: 0;
   border: .1rem solid black;
   text-decoration: none;
 }
 
-    #nav a:link, a:visited {
+    .nav a:link, a:visited {
     	display:block;
         color: black;
         text-align:center;
@@ -50,7 +64,7 @@ h1 {
       font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     }
 
-    #nav a:hover {
+    .nav a:hover {
       display: block;
     font-weight: bold;
     color: lightgray;
@@ -58,18 +72,10 @@ h1 {
     }
 
 img{
+  display: block;
   border-style: none;
-  float: right;}
-
-#flex{
-  display: flex;
-  flex-flow: row wrap;
 }
-@media (min-width:600px) {
-  #flex{flex-flow: column;
 
-  }
-}
 
 .caption {
   color:black;
