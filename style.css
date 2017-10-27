@@ -33,20 +33,7 @@ h1 {
 }
 
 
-@media and screen (min-width: 600px){
-  .nav{flex-direction: row;
-  justify-content: center;}
-/*  .content p{
-    flex-direction: row;
-    width: 70%;
-    float: left;} */
-  img{
-    justify-content: flex-end;
-        float: right;}
-  .content1 {order: -1;}
-  .content2{order: 1;}
 
-}
 
 
 .nav li{
@@ -84,4 +71,18 @@ img{
   font-size: .85rem;
   margin-left: 15%;
   font-family:'Roboto Condensed', Helvetica, Arial, sans-serif;
+}
+
+@media screen and (min-width: 600px){
+  .nav{flex-direction: row;
+  justify-content: center;}
+/*  .content p{
+    flex-direction: row;
+    width: 70%;
+    float: left;} */
+  img{
+        float: right;}
+  .content1 {order: -1;}
+  .content2{order: 1;}
+
 }
