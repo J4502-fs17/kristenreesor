@@ -41,6 +41,7 @@ h1 {
     width: 70%;
     float: left;} */
   img{
+    justify-content: flex-end;
         float: right;}
   .content1 {order: -1;}
   .content2{order: 1;}
@@ -72,7 +73,7 @@ h1 {
     }
 
 img{
-  display: block;
+  display: flex;
   border-style: none;
 }
 
