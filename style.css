@@ -59,6 +59,16 @@ h1 {
 
 img{
   border-style: none;
+  float: right;}
+
+#flex{
+  display: flex;
+  flex-flow: row wrap;
+}
+@media (min-width:600px) {
+  #flex{flex-flow: column;
+
+  }
 }
 
 .caption {
