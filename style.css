@@ -2,6 +2,7 @@ html{ font-size: 100%;
 }
 
 body{
+  text-align: center;
 background-color: gray;}
 
 p {
@@ -29,12 +30,9 @@ h1 {
     }
 .content {
   display: flex;
+  width: 100%;
   flex-direction: column;
 }
-
-
-
-
 
 .nav li{
   margin: 0;
@@ -43,7 +41,7 @@ h1 {
   text-decoration: none;
 }
 
-    .nav a:link, a:visited {
+.nav a:link, a:visited {
     	display:block;
         color: black;
         text-align:center;
@@ -52,8 +50,8 @@ h1 {
       font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     }
 
-    .nav a:hover {
-      display: block;
+.nav a:hover {
+    display: block;
     font-weight: bold;
     color: lightgray;
         background-color: darkred;
@@ -63,7 +61,6 @@ img{
   display: flex;
   border-style: none;
 }
-
 
 .caption {
   color:black;
@@ -76,13 +73,11 @@ img{
 @media screen and (min-width: 600px){
   .nav{flex-direction: row;
   justify-content: center;}
-/*  .content p{
+  .content {
     flex-direction: row;
-    width: 70%;
-    float: left;} */
-  img{
+  }
+  .image{
         float: right;}
-  .content1 {order: -1;}
-  .content2{order: 1;}
 
+  .caption {float: right;}
 }
