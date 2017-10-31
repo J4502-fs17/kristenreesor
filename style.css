@@ -5,10 +5,15 @@ body{
   text-align: center;
 background-color: gray;}
 
+a{
+  text-decoration: none;
+}
+
 p {
   font-size: 1rem;
 	color: darkred;
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    text-decoration: none;
 }
 h1,h4{
   font-family: 'Roboto Slab', Georgia, "Times New Roman", serif;
@@ -70,11 +75,48 @@ img{
   font-family:'Roboto Condensed', Helvetica, Arial, sans-serif;
 }
 
-
 .grid {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: (3, 250px);
+  grid-template-rows: (3, 250px);
+  grid-gap: 10px;
+  gap: 10px;
+  grid-auto-rows: minmax(150px, auto);
   grid-template-areas:
-  ""
-  "";
+  "a b b"
+  "a c e"
+  "d d e";
+}
+
+.pic1 {
+    grid-area: a;
+    align-self: stretch;
+}
+
+.pic2 {
+  grid-area: b;
+  align-self: stretch;
+}
+.pic3 {
+  grid-area: c;
+}
+.pic4 {
+  grid-area: d;
+  align-self: stretch;
+}
+.pic5{
+  grid-area: e;
+}
+.grid li{
+    color: darkred;
+    text-decoration: none;
+    background-color: darkgrey;
+    border: 10px solid grey;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 @media screen and (min-width: 600px){
@@ -87,4 +129,25 @@ img{
         float: right;}
 
   .caption {float: right;}
+}
+
+@media screen and (max-width: 599px) {
+    .grid {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: (1, 250px);
+    grid-template-rows: (5, 250px);
+    grid-gap: 5px;
+    gap: 5px;
+    grid-auto-rows: minmax(75px, auto);
+    grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e";
+    }
+
 }
