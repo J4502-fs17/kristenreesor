@@ -70,6 +70,13 @@ img{
   font-family:'Roboto Condensed', Helvetica, Arial, sans-serif;
 }
 
+
+.grid {
+  grid-template-areas:
+  ""
+  "";
+}
+
 @media screen and (min-width: 600px){
   .nav{flex-direction: row;
   justify-content: center;}
