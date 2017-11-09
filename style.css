@@ -28,27 +28,30 @@ h4{
 h1 {
     color: darkred;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
-.nav {
-    display: flex;
+nav {
+    display: block;
     flex-direction: column;
     list-style-type: none;
+    text-decoration: none;
       padding: 0;
     }
 .content {
   display: flex;
   flex-direction: column;
 }
-
-.nav li{
+nav ul{
+  list-style: none;
+}
+li{
   margin: 0;
     padding: 0;
   border: .1rem solid black;
   text-decoration: none;
 }
 
-.nav a:link, a:visited {
+a:link, a:visited {
     	display:block;
         color: black;
         text-align:center;
@@ -57,7 +60,7 @@ h1 {
       font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     }
 
-.nav a:hover {
+nav a:hover {
     display: block;
     font-weight: bold;
     color: lightgray;
@@ -84,7 +87,7 @@ img{
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 30%);
-  grid-template-rows: repeat(3, 250px);
+  grid-template-rows: repeat(3, 300px);
   grid-gap: 10px;
   grid-auto-rows: minmax(150px, auto);
   grid-template-areas:
@@ -121,9 +124,24 @@ img{
     border-radius: 5px;
 }
 
+header{
+  display: flex;
+  flex-flow:row;
+}
+
+
 @media screen and (min-width:800px){
-  .nav{flex-direction: row;
-  justify-content: center;}
+  nav{
+  flex-direction: row;
+  justify-content: center;
+}
+  ul{
+    display: flex;
+  }
+  .menu-trigger {
+    display: none;
+      visibility: hidden;
+  }
   .content {
     flex-direction: row;
   }
@@ -133,7 +151,7 @@ img{
   .caption {float: right;}
 }
 
-@media screen and (max-width:799px){
+@media screen and (max-width:799px){ /*iPad*/
   #container{
     width: 90%;
   }
@@ -151,10 +169,14 @@ img{
     "c d"
     "e e";
   }
+  .menu-trigger{
+    display: none;
+    visibility: hidden;
+  }
 }
 
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) { /*mobile*/
     #container {width: 95%;}
     .grid {
     margin: 0;
@@ -172,5 +194,14 @@ img{
     "d"
     "e";
     }
-
+ .menu-trigger{
+   visibility: visible;
+      order:1;
+    }
+ul{
+    display: none;
+  }
+header h1 {
+  order:2;
+}
 }
