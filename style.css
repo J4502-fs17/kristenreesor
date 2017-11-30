@@ -12,6 +12,21 @@ a{
   text-decoration: none;
 }
 
+.wrapper{
+    overflow:hidden;
+    padding-bottom:56.25%; /*padding expands to acoomodate whats in it = 16 by 9 */
+    position:relative; /*anything else within the div will be enacted on it? */
+    height:0; /*will inherit height from whatever is in it */
+}
+
+.wrapper iframe{
+    left:0;
+    top:0;
+    height:100%;/*of available space in wrapper div */
+    width:100%;
+    position:absolute;
+}
+
 p {
   font-size: 1rem;
 	color: darkred;
